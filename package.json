@@ -1,0 +1,17 @@
+{
+    "buildNpmdoc":"ng2-bootstrap",
+    "devDependencies": {
+        "ng2-bootstrap": "*",
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "name":"npmdoc-ng2-bootstrap",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-ng2-bootstrap"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh"
+    },
+    "version": "0.0.1"
+}
