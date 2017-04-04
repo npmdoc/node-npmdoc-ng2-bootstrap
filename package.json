@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"ng2-bootstrap",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "ng2-bootstrap",
+    "description": "api documentation for [ng2-bootstrap (v1.6.1)](https://github.com/valor-software/ng2-bootstrap#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-ng2-bootstrap.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ng2-bootstrap) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ng2-bootstrap.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ng2-bootstrap)",
     "devDependencies": {
-        "ng2-bootstrap": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "ng2-bootstrap": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-ng2-bootstrap",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-ng2-bootstrap",
+    "keywords": [
+        "documentation",
+        "ng2-bootstrap"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_ng2_bootstrap.js",
+    "name": "npmdoc-ng2-bootstrap",
+    "nameAlias": "npmdoc_ng2_bootstrap",
+    "nameOriginal": "npmdoc-ng2-bootstrap",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-ng2-bootstrap"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
