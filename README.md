@@ -1,6 +1,6 @@
 # npmdoc-ng2-bootstrap
 
-#### api documentation for  [ng2-bootstrap (v1.6.3)](https://github.com/valor-software/ngx-bootstrap#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ng2-bootstrap.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ng2-bootstrap) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ng2-bootstrap.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ng2-bootstrap)
+#### basic api documentation for  [ng2-bootstrap (v1.6.3)](https://github.com/valor-software/ngx-bootstrap#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-ng2-bootstrap.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ng2-bootstrap) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ng2-bootstrap.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ng2-bootstrap)
 
 #### Native Angular Bootstrap Components
 
@@ -68,7 +68,8 @@
     },
     "scripts": {},
     "typings": "index.d.ts",
-    "version": "1.6.3"
+    "version": "1.6.3",
+    "bin": {}
 }
 ```
 
